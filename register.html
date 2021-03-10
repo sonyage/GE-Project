@@ -1,0 +1,79 @@
+<!-- register.html -->
+
+<!-- Register + view courses ++ on other side
+    save or cancel registration -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Class Registration</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous">
+    </head>
+
+    <body>
+    <!-- Display student info -->
+        <div>
+            <h6 id = "StudentInfo">
+            </h6>
+
+        </div>
+
+
+    <!-- display available classes, scroll list ?-->
+        <div>
+            <h2>Available Courses</h2>
+            <table class = "table table-striped">
+                <tr class="available-classes">
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Time<th>
+                </tr>
+                <tbody id="courseList">
+                </tbody>
+            </table> 
+        </div>
+        
+    <!-- display current classes, list, max 5 -->
+        <div>
+            <h2>Saved Courses</h2>
+            <table class = "table table-striped">
+                <tr class="cur-classes">
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Time<th>
+                </tr>
+                <tbody id="currList">
+                </tbody>
+            </table> 
+            <p>
+            <input type="submit" value="Register" onclick="app.SaveReg()" class="btn btn-success">
+            <input type="submit" value="Cancel Registration" onclick="app.CancelReg()" class="btn btn-danger">
+            </p>
+        </div>
+
+        <!-- display current enrolled in classes, list, max 5 -->
+        <div>
+            <h2>Current Enrollments</h2>
+            <table class = "table table-striped">
+                <tr class="cur-classes">
+                    <th>Course ID</th>
+                    <th>Course Name</th>
+                    <th>Time<th>
+                </tr>
+                <tbody id="currList">
+                </tbody>
+            </table> 
+        </div>
+
+        <script src = "script.js"></script>
+            
+    </body>
+            
+</html>

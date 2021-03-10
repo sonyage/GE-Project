@@ -1,0 +1,44 @@
+<!-- index.html -->
+
+<!-- login page -->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Sign In</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+
+        <script src = "script.js"></script>
+    </head>
+
+    <!-- student sign-in -->
+    <body>
+        <div class="title">
+            <h1>Student Sign In</h1>
+        </div>
+
+        <div class="form">
+
+            <form action= './register.html' method="post"
+        onsubmit=app.checkLogin()>
+                <input type="text" id="studentID" placeholder="Student ID" required> <br>
+                <input type="password" id="password" placeholder="Password" required> <br>
+                <input type="submit" value="Login" class="btn btn-info">
+             </form>
+
+        </div>
+        <!-- since credentials already given, support number for those having issues-->
+        <p>
+            If you're experiencing technical difficulties,         
+            please call support at (555)555-5555.
+        </p>
+    </body>
+
+</html>
